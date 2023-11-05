@@ -10,7 +10,6 @@ const Player = ({supabase, deletePlayer}) => {
 
     useEffect(() => {
         getPlayerDet();
-        console.log(id);
     }, [id])
 
     async function getPlayerDet() {
