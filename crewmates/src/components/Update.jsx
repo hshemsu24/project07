@@ -20,7 +20,7 @@ const Update = ({player, onSubmit}) => {
 
         if(name === '' || position === '' || foot === '' || skill === '' || cleats === '') {
             alert('Please fill out all fields!')
-            console.log(player + 'player');
+            //console.log(player + 'player');
             return;
         } else {
             await onSubmit(name, position, foot, skill, cleats);

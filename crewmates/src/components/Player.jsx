@@ -18,7 +18,7 @@ const Player = ({supabase, deletePlayer}) => {
             console.error('Error fetching player: ', error);
         } else {
              setPlayer(data);
-        console.log(data);
+        //console.log(data);
         } 
        
     }

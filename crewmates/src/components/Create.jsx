@@ -29,7 +29,7 @@ const Create = ({supabase, onPlayerAdded}) => {
             {player_name: name, favorite_position: position, preferred_foot: preferred_foot, skill: skill, cleat_color:cleats},
         ])
 
-        console.log(data)
+        //console.log(data)
         alert('Player Added!')
 
         if (error) {
