@@ -31,7 +31,7 @@ const Player = ({supabase, deletePlayer}) => {
 
     async function handleUpdate(name, position, foot, skill, cleats) {
         await supabase.from('Players').update({player_name: name, favorite_position: position, preferred_foot: foot, skill: skill, cleat_color: cleats}).eq('id', id).select();
-        getPlayerDet();
+        await getPlayerDet();
         setEditing(false);
     }
 
